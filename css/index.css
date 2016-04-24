@@ -2,6 +2,13 @@
 *{
   font-family: '微软雅黑';
 }
+nav{
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+}
+.fixed-nav{
+  position: fixed;
+}
 header{
   background: url('../img/3.jpg') fixed top no-repeat;
   background-size: 100%;
@@ -76,6 +83,8 @@ header{
   display: block;
   margin: 0 auto;
   border-radius: 50%;
+  height: 128px;
+  width: 128px;
 }
 .img-title h5{
   text-align: center;
@@ -95,11 +104,13 @@ header{
   width: 100%;
   height: 640px;
 }
-
+.no-visibility{
+  visibility: hidden;
+}
 /*Responsive css*/
 @media screen and (max-width:768px) {
   header{
-    background: url('../img/3.jpg') fixed top center no-repeat;
+    background: url('../img/3small.jpg') fixed top center no-repeat;
     background-size: cover;
   }
   .head-title{
@@ -109,7 +120,7 @@ header{
     font-size: 36px;
   }
   .fixed-img{
-    background: url('../img/3.jpg') fixed top center no-repeat;
+    background: url('../img/3small.jpg') fixed top center no-repeat;
     background-size: cover;
     height: 500px;
   }
@@ -131,10 +142,22 @@ header{
     width: 100%;
     height: 100%;
   }
+  .section2{
+    background: url('../img/img2_small.jpg') center no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+  }
+  .section3{
+    background: url('../img/img3_small.jpg') top center no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+  }
 }
 @media screen and (max-width:599px) {
   header{
-    background: url('../img/3.jpg') fixed top center no-repeat;
+    background: url('../img/3small.jpg') fixed top center no-repeat;
     background-size: cover;
   }
   .head-title{
@@ -144,7 +167,7 @@ header{
     font-size: 36px;
   }
   .fixed-img{
-    background: url('../img/3.jpg') fixed top center no-repeat;
+    background: url('../img/3small.jpg') fixed top center no-repeat;
     background-size: cover;
     height: 500px;
   }

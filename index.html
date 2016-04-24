@@ -5,12 +5,13 @@
     <title>进击的FrontEnd</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/index.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav>
+    <header id="hearder">
+      
+      <nav class="nav no-visibility">
         <div class="container">
           <a href="#!" class="brand-logo">FrontEndClub</a>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -30,6 +31,27 @@
           </ul>
         </div>
       </nav>
+      <nav class="no-visibility fixed-nav">
+        <div class="container">
+          <a href="#!" class="brand-logo">FrontEndClub</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="">首页</a></li>
+            <li><a href="">一些课程</a></li>
+            <li><a href="">知识技能</a></li>
+            <li><a href="">关于我们</a></li>
+            <li><a href="">加入我们</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="">首页</a></li>
+            <li><a href="">一些课程</a></li>
+            <li><a href="">知识技能</a></li>
+            <li><a href="">关于我们</a></li>
+            <li><a href="">加入我们</a></li>
+          </ul>
+        </div>
+      </nav>
+
       <div class="head-title">
         <h1>WEB前端工程师</h1>
         <h1>程序员中的设计师，设计师中的程序员</h1>
@@ -37,8 +59,8 @@
     </header>
 
     <section class="section1">
-      <h3 class="section1-title">既是程序员，又是设计师</h3>
-      <div class="section1-content container">
+      <h3 class="section1-title no-visibility">既是程序员，又是设计师</h3>
+      <div class="section1-content container no-visibility">
         <div class="row">
           <div class="feature hoverable col s12 l4">
             <h4>HTML</h4>
@@ -96,7 +118,7 @@
     <section class="section2">
       <div class="content left">
         <div class="row">
-          <div class="col s12">
+          <div class="col s12 section2-content no-visibility">
             <div class="card blue-grey darken-1">
               <div class="card-content white-text">
                 <span class="card-title">作为程序员</span>
@@ -116,7 +138,7 @@
     <section class="section3">
       <div class="content right">
         <div class="row">
-          <div class="col s12">
+          <div class="col s12 section3-content no-visibility">
             <div class="card blue-grey darken-1">
               <div class="card-content white-text">
                 <span class="card-title">作为设计师</span>
@@ -140,10 +162,10 @@
 
     <section class="section4">
       <div class="img-title">
-        <img src="img/js.png" alt="">
+        <img src="img/master.jpg" alt="">
         <h5>班主任!?</h5>
       </div>
-      <div class="container">
+      <div class="container section4-content no-visibility">
         <div class="row">
           <div class="col s12">
             <ul class="tabs">
@@ -156,7 +178,7 @@
             <div class="class-manager">
               <div class="card hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="img/headimg.png">
+                  <img class="activator" src="img/4small.jpg">
                 </div>
                 <div class="card-content">
                   <span class="card-title activator grey-text text-darken-4">没错，这逼就是班主任<i class="right">Konw More</i></span>
@@ -236,7 +258,7 @@
 
     <section class="section5">
       <div class="container">
-        <div class="join-us">
+        <div class="join-us section5-content no-visibility">
           <h3>加入路径</h3>
           <ul class="collapsible popout" data-collapsible="accordion">
             <li>
@@ -295,5 +317,103 @@
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript">
     $(".button-collapse").sideNav();
+
+    var  addAnimate = function (selector, animateName, shouldRmove, strangerRemove){
+      $(selector).addClass('animated ' + animateName).removeClass('no-visibility');
+      if(shouldRmove){
+        setTimeout(function (){
+          $(selector).removeClass('animated ' + animateName);
+        }, 2000);
+      }
+      if (strangerRemove){
+        setTimeout(function (){
+          $(selector).removeClass('animated ' + animateName).addClass('no-visibility');
+        }, 500);
+      }
+    };
+
+    var getScreenHeight = function (){
+      return document.documentElement.clientHeight
+    };
+
+    var screenHeight = getScreenHeight();
+    // 设置头部高度适应浏览器窗口大小
+    $('header').css({
+      'height': screenHeight
+    });
+
+    //得到元素与浏览器顶部的距离
+    var getTopPoint = function(element){
+      return element.getBoundingClientRect().top;
+    };
+
+    $(window).scroll(function(){
+      var header = document.getElementById('hearder');
+      var headeTop = getTopPoint(header);
+      console.log(headeTop);
+      if (headeTop <= -70){
+        console.log(1);
+        $('.fixed-nav').css({
+          'backgroundColor': '#ee6e73',
+          'borderBottom': 'none',
+          'top': 0,
+          'z-index': 99,
+        })
+        addAnimate('.fixed-nav', 'fadeInDown');
+      }
+      if (headeTop >= 0){
+        addAnimate('.fixed-nav', 'fadeOutUp', false, true);
+      }
+    });
+
+    // head动画
+    addAnimate('.nav', 'fadeInDown', true);
+    addAnimate('.head-title', 'fadeInUp', true);
+    //设置剩下的每个动画
+    var options = [
+      {
+        selector: '.section1-title',
+        offset: 50,
+        callback: function (){
+          addAnimate('.section1-title', 'fadeInUp');
+        }
+      },
+      {
+        selector: '.section1-title',
+        offset: 300,
+        callback: function (){
+          addAnimate('.section1-content', 'fadeInUp');
+        }
+      },
+      {
+        selector: '.section2-content',
+        offset: 300,
+        callback: function (){
+          addAnimate('.section2-content', 'fadeInUp');
+        }
+      },
+      {
+        selector: '.section3-content',
+        offset: 300,
+        callback: function (){
+          addAnimate('.section3-content', 'fadeInUp');
+        }
+      },
+      {
+        selector: '.section4-content',
+        offset: 400,
+        callback: function (){
+          addAnimate('.section4-content', 'rubberBand');
+        }
+      },
+      {
+        selector: '.section5-content',
+        offset: 250,
+        callback: function (){
+          addAnimate('.section5-content', 'bounceInDown');
+        }
+      }
+    ];
+    Materialize.scrollFire(options);
   </script>
 </html>
