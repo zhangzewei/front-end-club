@@ -1,0 +1,68 @@
+/*关于我们 start*/
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+}
+body {
+    font-family: "arial", "微软雅黑";
+}
+
+#about{
+    padding: 80px 0;
+}
+.fixed-action-btn {
+    position: absolute;
+    right: 22px;
+    top: 12px;
+}
+.fixed-action-btn > a{
+    border: 2px solid #fff;
+}
+.fixed-action-btn > a i:hover{
+    background-color: #e53935;
+}
+.fixed-action-btn.horizontal ul {
+    right: 53px;
+}
+.fixed-action-btn.horizontal ul li {
+    margin: 0 2px;
+}
+.card .card-image img{
+    height: 210px;
+}
+.card .card-image .card-title{
+    font-size: 29px;
+    font-family: 华文隶书;
+    text-shadow: 3px 3px #086fa1;
+}
+.card .card-content{
+    padding: 5px 20px;
+}
+.card .card-action{
+    padding: 8px 19px;
+    color: #fff;
+    background-color: #e57373;
+}
+.card .card-action i{
+    margin-left: 2px;
+}
+.card .card-action .card-more{
+    position: absolute;
+    top: -1px;
+    bottom: 0;
+    right: 0;
+    padding: 7px 7px 0;
+    background-color: #4db6ac;
+    cursor: pointer;
+}
+.card .card-action .card-more:hover{
+    background-color: #0A64A4;
+}
+.collection .collection-item img{
+    width: 35px;
+    height: 35px;
+}
+/*关于我们 end*/
