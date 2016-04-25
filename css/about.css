@@ -21,8 +21,41 @@ body {
 .fixed-action-btn > a{
     border: 2px solid #fff;
 }
-.fixed-action-btn > a i:hover{
-    background-color: #e53935;
+.fixed-action-btn > a.red i:hover{
+    background-color: #b71c1c;
+}
+.fixed-action-btn > a.pink i:hover{
+    background-color: #880e4f;
+}
+.fixed-action-btn > a.purple i:hover{
+    background-color: #4a148c;
+}
+.fixed-action-btn > a.deep-purple i:hover{
+    background-color: #311b92;
+}
+.fixed-action-btn > a.indigo i:hover{
+    background-color: #1a237e;
+}
+.fixed-action-btn > a.blue i:hover{
+    background-color: #0d47a1;
+}
+.fixed-action-btn > a.light-blue i:hover{
+    background-color: #01579b;
+}
+.fixed-action-btn > a.cyan i:hover{
+    background-color: #006064;
+}
+.fixed-action-btn > a.teal i:hover{
+    background-color: #004d40;
+}
+.fixed-action-btn > a.green i:hover{
+    background-color: #1b5e20;
+}
+.fixed-action-btn > a.light-green i:hover{
+    background-color: #33691e;
+}
+.fixed-action-btn > a.lime i:hover{
+    background-color: #827717;
 }
 .fixed-action-btn.horizontal ul {
     right: 53px;
@@ -54,7 +87,7 @@ body {
     top: -1px;
     bottom: 0;
     right: 0;
-    padding: 7px 7px 0;
+    padding: 7px 12px 0;
     background-color: #4db6ac;
     cursor: pointer;
 }
