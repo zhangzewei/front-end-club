@@ -1231,3 +1231,65 @@ h1, h2, h3 {
 .material-card.Blue-Grey.mc-active .mc-btn-action {
     border-color: #eceff1;
 }
+#note{
+    padding-left: 18px;
+}
+.pagination{
+    margin-top: 50px;
+}
+.pagination li {
+    padding: 0;
+    border-radius: 0;
+}
+.pagination  li  a{
+    padding: 10px 14px;
+    font-weight: lighter;
+    border: 1px solid #ddd;
+}
+.pagination li.active a{
+    color: #fff;
+    background-color: #00a383;
+}
+.pagination li a:hover{
+    color: #fff;
+    background-color: #000;
+}
+.pagination .p a,.pagination .n a{
+    padding: 10px 27px;
+    border-radius: 30px;
+}
+.pagination li.n{
+    border: 0;
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 1150px){
+    .fixed-action-btn {
+        right: 15px;
+    }
+    .fixed-action-btn a{
+        width: 30px;
+        height: 30px;
+    }
+    .fixed-action-btn a i{
+        line-height: 28px;
+    }
+    .fixed-action-btn.horizontal ul {
+        right: 40px;
+    }
+    .fixed-action-btn.horizontal ul li {
+        margin: 0 1px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .pagination{
+        margin-top: 20px;
+    }
+    .pagination  li  a{
+        padding: 5px 9px;
+    }
+    .pagination .p a,.pagination .n a{
+        padding: 5px 20px;
+    }
+}
+/*关于我们 end*/
