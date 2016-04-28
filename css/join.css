@@ -1,0 +1,28 @@
+section{
+  margin: 50px auto;
+}
+.content{
+  height: 220px;
+  padding: 20px;
+  color: #fff;
+}
+.content1{
+  background: url('../img/cha1.jpg') center no-repeat;
+  background-size: cover;
+}
+.content4{
+  background: url('../img/cha7.jpg') center no-repeat;
+  background-size: cover;
+}
+.content5{
+  background: url('../img/cha3.jpg') center no-repeat;
+  background-size: cover;
+}
+.content8{
+  background: url('../img/cha6.jpg') center no-repeat;
+  background-size: cover;
+}
+.content9{
+  background: url('../img/cha3.jpg') center no-repeat;
+  background-size: cover;
+}

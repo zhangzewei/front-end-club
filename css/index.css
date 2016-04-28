@@ -2,13 +2,6 @@
 *{
   font-family: '微软雅黑';
 }
-nav{
-  background-color: transparent;
-  border-bottom: 1px solid #fff;
-}
-.fixed-nav{
-  position: fixed;
-}
 header{
   background: url('../img/3.jpg') fixed top no-repeat;
   background-size: 100%;
@@ -103,9 +96,6 @@ header{
 .class-manager{
   width: 100%;
   height: 640px;
-}
-.no-visibility{
-  visibility: hidden;
 }
 /*Responsive css*/
 @media screen and (max-width:768px) {

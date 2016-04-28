@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="关于我们">
-    <meta name="author" content="枫上雾棋">
-    <title>关于我们</title>
+    <meta name="description" content="加入我们">
+    <meta name="author" content="mark_zzw">
+    <title>加入我们</title>
 
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/common.css"><!-- 头部的公共的CSS -->
-    <link type="text/css" rel="stylesheet" href="css/about.css">
+    <link type="text/css" rel="stylesheet" href="css/join.css">
 </head>
 <body>
     <!--张泽玮 start-->
@@ -60,44 +60,70 @@
       </nav>
       <div class="container">
         <div class="row">
-          <h1>关于我们</h1>
-          <h4>组成这个学习班级的可爱的同学们</h4>
+          <h1>加入我们</h1>
+          <h4>这个大家庭时刻欢迎你</h4>
         </div>
       </div>
     </header>
     <!--张泽玮 end-->
-    <div class="htmleaf-container">
-        <section class="container">
-            <div class="row active-with-click">
-                <div class="col l4 m6 s12">
-                    <article class="material-card Red">
-                        <h2>
-                            <span>王东</span>
-                            <strong>6ZFW</strong>
-                        </h2>
-                        <div class="mc-content">
-                            <div class="img-container">
-                                <img class="img-responsive" src="img/wd.jpg">
-                            </div>
-                            <div class="mc-description">
-                                一些废话一些废话一些废话一些废话一些废话一些废话一些废话一些废话一些废话一些废话一些废话一些废话一些废话
-                            </div>
-                        </div>
-                        <a class="mc-btn-action">
-                            <i class="material-icons">toc</i>
-                        </a>
-                        <div class="mc-footer">
-                            <h4>Skiils</h4>
-                            <a class="fa fa-fw fa-facebook"></a>
-                            <a class="fa fa-fw fa-twitter"></a>
-                            <a class="fa fa-fw fa-linkedin"></a>
-                            <a class="fa fa-fw fa-google-plus"></a>
-                        </div>
-                    </article>
-                </div>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6 l5 content1">
+            <div class="content">
+              <h3>在这里我们可以分享自己的学习和设计心得=></h3>
             </div>
-        </section>
-    </div>
+          </div>
+          <div class="col s12 m6 l7 cyan darken-3 content2">
+            <div class="content">
+              <h3>HTML5+CSS3+JS<br>前沿设计理念，创意设计理念，高端设计理念</h3>
+            </div>
+          </div>
+          <div class="col s12 m6 l7 brown darken-1 content3">
+            <div class="content">
+              <h3>更有前沿的技术JQuery,reactJS,angularJS,nodeJS</h3>
+            </div>
+          </div>
+          <div class="col s12 m6 l5 content4">
+            <div class="content">
+              <h3>当然还有webpack,git,github,面向对象编程思想</h3>
+            </div>
+          </div>
+          <div class="col s12 m6 l5 content5">
+            <div class="content">
+              <h3>我们需要这样的你=></h3>
+            </div>
+          </div>
+          <div class="col s12 m6 l7 orange accent-3 content6">
+            <div class="content">
+              <h3>乐于与人分享，热爱学习，喜欢挑战，有足够的自信，但是千万别问一些很白痴的问题不懂就去百度</h3>
+            </div>
+          </div>
+          <div class="col s12 m6 l7 blue-grey darken-1 content7">
+            <div class="content">
+              <h3>喜欢设计，喜欢研究代码，喜欢享受参与一个作品从0-1的过程</h3>
+            </div>
+          </div>
+          <div class="col s12 m6 l5 content8">
+            <div class="content">
+              <h3>强大的自学能力和自控能力，有一定的组织能力，喜欢思考</h3>
+            </div>
+          </div>
+          <div class="col s12 content9">
+            <div class="content">
+              <p>
+                加入我们？
+                <br>你需要去学习<a href="skills.html">知识技能</a>中的入门的知识，然后制作一个你觉得可以的页面（考量代码和设计），然后以你的学院，班级，名字发至邮箱：453646474@qq.com
+                <br>加分点：1、一定的编程基础；
+                <br>加分点：2、一定的设计基础；
+                <br>加分点：3、或者写上自己的一些对与设计和网页页面设计的感悟或者想法；
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="page-footer">
        <div class="container">
          <div class="row">
@@ -115,30 +141,22 @@
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
-    <script>
-        $(function() {
-            $('.material-card > .mc-btn-action').click(function () {
-                var card = $(this).parent('.material-card');
-                var icon = $(this).children('i');
-                icon.addClass('fa-spin-fast');
+    <script type="text/javascript">
 
-                if (card.hasClass('mc-active')) {
-                    card.removeClass('mc-active');
+    addAnimate('.content1', 'fadeInLeft');
+    addAnimate('.content2', 'fadeInRight');
 
-                    window.setTimeout(function() {
-                        icon.removeClass('fa-arrow-left,fa-spin-fast')
-                            .addClass('fa-bars');
-                    }, 800);
-                } else {
-                    card.addClass('mc-active');
+    addAnimate('.content3', 'fadeInLeft');
+    addAnimate('.content4', 'fadeInRight');
 
-                    window.setTimeout(function() {
-                        icon.removeClass('fa-bars,fa-spin-fast')
-                            .addClass('fa-arrow-left');
-                    }, 800);
-                }
-            });
-        });
+    addAnimate('.content5', 'fadeInLeft');
+    addAnimate('.content6', 'fadeInRight');
+
+    addAnimate('.content7', 'fadeInLeft');
+    addAnimate('.content8', 'fadeInRight');
+
+    addAnimate('.content9', 'fadeInUp');
+
     </script>
 </body>
 </html>
