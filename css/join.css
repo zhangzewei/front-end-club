@@ -26,3 +26,36 @@ section{
   background: url('../img/cha3.jpg') center no-repeat;
   background-size: cover;
 }
+/*Responsive css*/
+@media screen and (max-width:768px) {
+  .content{
+    height: 300px;
+  }
+  .content h3{
+    font-size: 30px;
+    text-align: justify;
+    word-wrap: break-word;
+    word-break: normal;
+  }
+  .content p{
+    text-align: justify;
+    word-wrap: break-word;
+    word-break: normal;
+  }
+}
+@media screen and (max-width:599px) {
+  .content{
+    height: 300px;
+  }
+  .content h3{
+    font-size: 30px;
+    text-align: justify;
+    word-wrap: break-word;
+    word-break: normal;
+  }
+  .content p{
+    text-align: justify;
+    word-wrap: break-word;
+    word-break: normal;
+  }
+}
