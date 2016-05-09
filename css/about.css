@@ -190,8 +190,9 @@ h1, h2, h3 {
     display: block;
     float: left;
     position: relative;
-    width: 52px;
+    width: auto;
     height: 52px;
+    padding: 0 10px;
     margin-left: 5px;
     margin-bottom: 15px;
     font-size: 28px;
