@@ -1,61 +1,43 @@
 section{
+  padding-top: 20px;
+}
+footer.page-footer{
+  margin-top: 0;
+}
+h3.tit{
   margin: 50px auto;
 }
-.content{
-  height: 220px;
-  padding: 20px;
-  color: #fff;
+.joy-value{
+  margin: 0;
 }
-.content1{
-  background: url('../img/cha1.jpg') center no-repeat;
-  background-size: cover;
+img.joy-img{
+  width: 100%;
+  vertical-align: middle;
+  padding: 0 !important;
 }
-.content4{
-  background: url('../img/cha7.jpg') center no-repeat;
-  background-size: cover;
+.right-img{
+  float: right !important;
 }
-.content5{
-  background: url('../img/cha3.jpg') center no-repeat;
-  background-size: cover;
+.joy-info{
+  padding: 110px 130px 0 60px !important;
 }
-.content8{
-  background: url('../img/cha6.jpg') center no-repeat;
-  background-size: cover;
-}
-.content9{
-  background: url('../img/cha3.jpg') center no-repeat;
-  background-size: cover;
+.join-us{
+  padding: 50px 0;
 }
 /*Responsive css*/
 @media screen and (max-width:768px) {
-  .content{
-    height: 300px;
+  .joy-info{
+    padding: 50px 60px !important;
   }
-  .content h3{
-    font-size: 30px;
-    text-align: justify;
-    word-wrap: break-word;
-    word-break: normal;
-  }
-  .content p{
-    text-align: justify;
-    word-wrap: break-word;
-    word-break: normal;
+  .right-img{
+    float: left;
   }
 }
 @media screen and (max-width:599px) {
-  .content{
-    height: 300px;
+  .joy-info{
+    padding: 50px 60px !important;
   }
-  .content h3{
-    font-size: 30px;
-    text-align: justify;
-    word-wrap: break-word;
-    word-break: normal;
-  }
-  .content p{
-    text-align: justify;
-    word-wrap: break-word;
-    word-break: normal;
+  .right-img{
+    float: left;
   }
 }
