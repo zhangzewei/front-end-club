@@ -1,0 +1,133 @@
+/*关于我们 start*/
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+}
+#about{
+    padding: 80px 0;
+}
+.fixed-action-btn {
+    position: absolute;
+    right: 22px;
+    top: 12px;
+}
+.fixed-action-btn > a{
+    border: 2px solid #fff;
+}
+.fixed-action-btn > a.red i:hover,.red .card-more {
+    background-color: #b71c1c;
+}
+.fixed-action-btn > a.pink i:hover,.pink .card-more {
+    background-color: #880e4f;
+}
+.fixed-action-btn > a.purple i:hover,.purple .card-more {
+    background-color: #4a148c;
+}
+.fixed-action-btn > a.deep-purple i:hover,.deep-purple .card-more {
+    background-color: #311b92;
+}
+.fixed-action-btn > a.indigo i:hover,.indigo .card-more {
+    background-color: #1a237e;
+}
+.fixed-action-btn > a.blue i:hover,.blue .card-more {
+    background-color: #0d47a1;
+}
+.fixed-action-btn > a.light-blue i:hover,.light-blue .card-more {
+    background-color: #01579b;
+}
+.fixed-action-btn > a.cyan i:hover,.cyan .card-more {
+    background-color: #006064;
+}
+.fixed-action-btn > a.teal i:hover,.teal .card-more {
+    background-color: #004d40;
+}
+.fixed-action-btn > a.green i:hover,.green .card-more {
+    background-color: #1b5e20;
+}
+.fixed-action-btn > a.light-green i:hover,.light-green .card-more {
+    background-color: #33691e;
+}
+.fixed-action-btn > a.lime i:hover,.lime .card-more {
+    background-color: #827717;
+}
+.fixed-action-btn > a.yellow i:hover,.yellow .card-more {
+    background-color: #f57f17;
+}
+.fixed-action-btn > a.amber i:hover,.amber .card-more {
+    background-color: #ff6f00;
+}
+.fixed-action-btn > a.orange i:hover,.orange .card-more {
+    background-color: #e65100;
+}
+.fixed-action-btn > a.deep-orange i:hover,.deep-orange .card-more {
+    background-color: #bf360c;
+}
+.fixed-action-btn > a.brown i:hover,.brown .card-more {
+    background-color: #3e2723;
+}
+.fixed-action-btn > a.grey i:hover,.grey .card-more {
+    background-color: #212121;
+}
+.fixed-action-btn > a.blue-grey i:hover,.blue-grey .card-more {
+    background-color: #263238;
+}
+.fixed-action-btn.horizontal ul {
+    right: 53px;
+}
+.fixed-action-btn.horizontal ul li {
+    margin: 0 2px;
+}
+.card{
+    margin: 22px 18px;
+}
+.card .card-image img{
+    height: 210px;
+}
+.card .card-image .card-title{
+    font-size: 29px;
+    color: #26A69A;
+    font-weight: bold;
+}
+.card .card-action i{
+    margin-left: 2px;
+}
+.card .card-action .card-more{
+    position: absolute;
+    top: -1px;
+    bottom: 0;
+    right: 0;
+    padding: 7px 12px 0;
+    cursor: pointer;
+}
+.card .card-action .card-more:hover{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.card .card-content {
+    border-top: 3px solid #26a69a;
+}
+.card-reveal .close-reveal{
+    padding: 5px;
+    background-color: #F44336;
+    color: #fff;
+}
+.card-reveal .reveal-title{
+    font-weight: 600;
+}
+.collection{
+    margin: 7px 15px 0 16px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.collection .collection-item{
+    padding: 10px 0;
+}
+.collection .collection-item img{
+    width: 35px;
+    height: 35px;
+}
+/*关于我们 end*/

@@ -1,0 +1,43 @@
+section{
+  padding-top: 20px;
+}
+footer.page-footer{
+  margin-top: 0;
+}
+h3.tit{
+  margin: 50px auto;
+}
+.joy-value{
+  margin: 0;
+}
+img.joy-img{
+  width: 100%;
+  vertical-align: middle;
+  padding: 0 !important;
+}
+.right-img{
+  float: right !important;
+}
+.joy-info{
+  padding: 110px 130px 0 60px !important;
+}
+.join-us{
+  padding: 50px 0;
+}
+/*Responsive css*/
+@media screen and (max-width:768px) {
+  .joy-info{
+    padding: 50px 60px !important;
+  }
+  .right-img{
+    float: left;
+  }
+}
+@media screen and (max-width:599px) {
+  .joy-info{
+    padding: 50px 60px !important;
+  }
+  .right-img{
+    float: left;
+  }
+}
