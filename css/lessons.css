@@ -106,6 +106,9 @@ html,body{
     padding-left: 15px;
     padding-right: 15px;
 }
+.card .card-content {
+    border-top: 3px solid #26a69a;
+}
 .card-reveal .close-reveal{
     padding: 5px;
     background-color: #F44336;
